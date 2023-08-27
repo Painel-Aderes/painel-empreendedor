@@ -1,4 +1,39 @@
-@import "../global/reset";
-@import "../global/variables";
-@import "../global/base";
-@import "../components/component-header.scss";
+@import "../global/global-styles";
+@import "../components/component-header";
+
+.main {
+  padding-top: calc(4.5rem + var(--section_top-spacing));
+  padding-bottom: 4rem;
+  background: var(--wireframe-400);
+
+  .container {
+    flex-direction: column;
+
+    .display {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: var(--wireframe-000);
+    }
+
+    p {
+      color: var(--wireframe-000);
+      text-align: center;
+    }
+
+    .main-ctas {
+      margin-top: 2.75rem;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        width: 100%;
+        line-height: 1.4;
+
+        &:last-child {
+          margin-top: 1.5rem;
+          color: var(--wireframe-000);
+        }
+      }
+    }
+  }
+}

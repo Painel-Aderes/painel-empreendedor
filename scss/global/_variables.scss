@@ -1,7 +1,7 @@
 :root {
   //TIPOGRAFIA ================================
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-  
+
   --font-sans: 'Metropolis', 'sans-serif';
 
   --bold: 700;
@@ -21,4 +21,11 @@
 
   //BORDA ================================
   --borda: .125rem;
+
+  //ESPAÇAMENTO ================================
+  // // PADDIND-TOP -> FIXED HEADER 
+  --section_top-spacing: 4.5rem + 1px;
+
+  // // SEPARA O TITULO DO CONTEUDO DAS SEÇÕES
+  --section-title_spacing: 2.75rem;
 }

@@ -6,7 +6,7 @@ require_once('components/component-header.php')
 
   <?php
   if (isset($_GET['page'])) {
-    include('public/pages/page_estatistica.php');
+    // include('public/pages/page_estatistica.php');
   } else {
     require_once('page-home.php');
   }

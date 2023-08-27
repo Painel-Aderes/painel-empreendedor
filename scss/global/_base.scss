@@ -12,10 +12,6 @@ p a {
   display: flex;
 }
 
-.padding-top_section {
-  padding-top: 6.125rem;
-}
-
 .btn-primario, .btn-secundario, .btn-terciario {
   display: block;
   width: fit-content;
@@ -34,7 +30,7 @@ p a {
   }
 
   &.--borda-primaria {
-    border: 1px solid currentColor;
+    border: 2px solid currentColor;
   }
 }
 
