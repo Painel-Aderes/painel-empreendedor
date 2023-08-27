@@ -1,0 +1,53 @@
+body {
+  font-size: 16px;
+  font-family: var(--font-sans);
+}
+
+p a {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 0 1.25rem;
+  display: flex;
+}
+
+.padding-top_section {
+  padding-top: 6.125rem;
+}
+
+.btn-primario, .btn-secundario, .btn-terciario {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  border-radius: var(--borda);
+}
+
+.btn-primario {
+  font-weight: var(--medium);
+  padding: 1rem 2rem;
+
+  &.--cor-primaria {
+    background: var(--wireframe-000);
+    color: var(--wireframe-600);
+  }
+
+  &.--borda-primaria {
+    border: 1px solid currentColor;
+  }
+}
+
+.btn-secundario {
+  padding: .75rem 1.5rem;
+}
+
+.btn-terciario {
+  padding: .5rem 1.25rem;
+}
+
+.hide {
+  //esconde labels de botões - questão de acessibilidade
+  position: absolute;
+  left: -999999px;
+}

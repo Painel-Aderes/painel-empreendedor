@@ -1,0 +1,24 @@
+:root {
+  //TIPOGRAFIA ================================
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+  
+  --font-sans: 'Metropolis', 'sans-serif';
+
+  --bold: 700;
+  --semibold: 600;
+  --medium: 500;
+  --regular: 400;
+
+  //CORES ================================
+  // // WIREFRAME
+  --wireframe-000: #fff;
+  --wireframe-100: #E0E0E0;
+  --wireframe-200: #BDBDBD;
+  --wireframe-300: #828282;
+  --wireframe-400: #4F4F4F;
+  --wireframe-500: #333333;
+  --wireframe-600: #111111;
+
+  //BORDA ================================
+  --borda: .125rem;
+}

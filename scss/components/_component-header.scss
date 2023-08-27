@@ -1,0 +1,129 @@
+header {
+  background: var(--wireframe-000);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--wireframe-100);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: calc(4.5rem + 1px);
+    width: 100vw;
+    height: calc(100vh - 4.5rem - 1px);
+    background: rgba($color: #000000, $alpha: .15);
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s opacity ease-in-out;
+  }
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-container {
+      height: fit-content;
+
+      a {
+        font-weight: var(--semibold);
+        letter-spacing: -0.03rem;
+      }
+    }
+
+    #menu {
+      width: 2.5rem;
+      height: 2.5rem;
+
+      div {
+
+        &,
+        &::before,
+        &::after {
+          width: 1.75rem;
+          height: .1875rem;
+          background: var(--wireframe-500);
+          border-radius: var(--borda);
+        }
+
+        display: flex;
+        position: relative;
+        margin-left: auto;
+
+        &::before,
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          transition: .2s all ease-in-out;
+        }
+
+        &::before {
+          transform: translateY(-8px);
+        }
+
+        &::after {
+          transform: translateY(8px);
+        }
+      }
+    }
+
+    #header-nav {
+      position: absolute;
+      width: 15rem;
+      height: calc(100vh - 4.5rem - 1px); //4.5rem altura do header e 1px de borda
+      top: calc(4.5rem + 1px);
+      right: -15rem;
+      background: var(--wireframe-000);
+      padding: 3rem 1.25rem;
+      transition: .3s right ease-in-out;
+
+      #internal-nav {
+        display: flex;
+        flex-direction: column;
+        
+        li {
+          &:not(:last-child) {
+            margin-bottom: 1.375rem;
+          }
+          
+          a {
+            display: block;
+            padding: .5rem 0;
+            color: var(--wireframe-500);
+          }
+        }
+      }
+    }
+  }
+
+  &.header--ativo {
+    &::before {
+      visibility: visible;
+      opacity: 1;
+      transition: .3s opacity ease-in-out;
+    }
+
+    .container {
+      #menu div {
+        background: transparent;
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+
+      #header-nav {
+        right: 0;
+        transition: .3s right ease-in-out;
+      }
+    }
+  }
+}
