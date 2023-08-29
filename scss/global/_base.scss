@@ -7,22 +7,41 @@ p a {
   text-decoration: underline;
 }
 
+a {
+  display: block;
+}
+
 .container {
   padding: 0 1.25rem;
   display: flex;
 }
 
-.btn-primario, .btn-secundario, .btn-terciario {
+.btn-primario,
+.btn-secundario,
+.btn-terciario {
   display: block;
   width: fit-content;
   text-align: center;
   text-decoration: none;
   border-radius: var(--borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
 }
 
 .btn-primario {
   font-weight: var(--medium);
   padding: 1rem 2rem;
+
+  &.btn-index-after::after {
+    //temporario
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background: var(--wireframe-300);
+    margin-left: .5rem;
+  }
 
   &.--cor-primaria {
     background: var(--wireframe-000);
