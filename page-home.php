@@ -12,7 +12,7 @@
 
 <section class="index-section">
   <div class="container">
-    <img class="index-section-image__desktop" src="" alt="">
+    <img class="index-section-image__desktop" src="https://picsum.photos/592/368?grayscale" alt="">
 
     <div class="index-section-info">
       <h2>Microcrédito personalizado para você</h2>
@@ -62,5 +62,19 @@
         </div>
       </li>
     </ul>
+  </div>
+</section>
+
+<section class="index-section">
+  <div class="container">
+    <img class="index-section-image" src="https://picsum.photos/592/368?grayscale" alt="">
+
+    <div class="index-section-info">
+      <h2>Conheça o Painel do Empreendedor</h2>
+
+      <p class="texto-lg">O Painel do Empreendedor é uma plataforma abrangente sobre o empreendedorismo e desenvolvimento do estado do Espírito Santo. O Painel disponibiliza estatísticas para diversos perfis de empreendedor, além de também oferecer oportunidades de microcrédito.</p>
+
+      <a href="" class="btn-primario btn-index-after --cor-primaria">Saiba mais</a>
+    </div>
   </div>
 </section>

@@ -40,8 +40,16 @@
 .index-section {
   padding: var(--sections-margin) 0;
 
+  .container {
+    flex-direction: column;
+  }
+
   &-image__desktop {
     display: none;
+  }
+
+  &-image {
+    margin-bottom: 2.75rem;
   }
 
   &-info {
@@ -56,6 +64,7 @@
       color: var(--wireframe-000);
     }
   }
+
 }
 
 .section-perfil {
