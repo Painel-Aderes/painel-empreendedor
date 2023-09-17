@@ -10,10 +10,9 @@ menuButton.addEventListener('click', () => {
 window.onclick = e => {
   if (
     header.classList.contains('header--ativo') &&
-    !e.target.matches('#nav') &&
+    !e.target.matches('#header-nav') &&
     !e.target.matches('#menu') &&
-    !e.target.matches('#menu div') &&
-    !e.target.matches('.nav_1280')
+    !e.target.matches('#menu div')
   ) {
     header.classList.remove('header--ativo')
   }
@@ -30,8 +29,6 @@ internalLinks.forEach(each => {
       top: section.offsetTop - 100,
       behavior: 'smooth'
     });
-
-    // console.log(section.getBoundingClientRect().top - 100)
 
     header.classList.remove('header--ativo')
   })

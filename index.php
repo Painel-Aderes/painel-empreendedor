@@ -1,16 +1,18 @@
-<?php
-$stylesheet = 'index';
-$page_title = 'Painel do Empreendedor';
-require_once('components/component-header.php')
-?>
-
   <?php
+
   if (isset($_GET['page'])) {
-    // include('public/pages/page_estatistica.php');
+    $currentPage = $_GET['page'];
+
+    if ($currentPage == 'estatisticas') {
+      $perfil = $_GET['perfil'];
+      require_once('page-dashboard.php');
+    } elseif ($currentPage == 'publico') {
+      $perfil = $_GET['perfil'];
+      require_once('page-publico.php');
+    }
+
   } else {
     require_once('page-home.php');
   }
   ?>
-
-<?php require_once('components/component-footer.php') ?>
 

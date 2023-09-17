@@ -1,16 +1,22 @@
+<?php
+$stylesheet = 'index';
+$page_title = 'Painel do Empreendedor';
+require_once('components/component-header.php')
+?>
+
 <main class="main">
   <div class="container">
     <h1 class="display">Impulsionando o desenvolvimento no Espírito Santo</h1>
     <p>Explore recursos sobre o empreendedorismo e progresso capixaba.</p>
 
     <div class="main-ctas">
-      <a href="" class="btn-primario --cor-primaria">Acessar microcrédito</a>
-      <a href="" class="btn-primario --borda-primaria">Explorar serviços</a>
+      <a href="#microcredito" class="btn-primario --cor-primaria">Acessar microcrédito</a>
+      <a href="#servicos" class="btn-primario --borda-primaria">Explorar serviços</a>
     </div>
   </div>
 </main>
 
-<section class="index-section">
+<section class="index-section" id="microcredito">
   <div class="container">
     <img class="index-section-image__desktop" src="https://picsum.photos/592/368?grayscale" alt="">
 
@@ -24,7 +30,7 @@
   </div>
 </section>
 
-<section class="section-perfil">
+<section class="section-perfil" id="servicos">
   <div class="container">
     <h2>Acesse dados estatísticos personalizados para o seu perfil</h2>
 
@@ -36,7 +42,7 @@
           <h3>Perfil do Empreendedor</h3>
           <p class="texto-sm">Descubra informações detalhadas e relevantes sobre o cenário empreendedor do Espírito Santo.</p>
 
-          <a href="" class="btn-primario btn-index-after --cor-primaria">Acessar perfil</a>
+          <a href="index.php?page=publico&perfil=Empreendedores" class="btn-primario btn-index-after --cor-primaria">Acessar perfil</a>
         </div>
       </li>
 
@@ -47,7 +53,7 @@
           <h3>Perfil do Artesão</h3>
           <p class="texto-sm">Obtenha dados valiosos sobre o mercado de artesanato capixaba.</p>
 
-          <a href="" class="btn-primario btn-index-after --cor-primaria">Acessar perfil</a>
+          <a href="index.php?page=publico&perfil=Artesãos" class="btn-primario btn-index-after --cor-primaria">Acessar perfil</a>
         </div>
       </li>
 
@@ -58,7 +64,7 @@
           <h3>Perfil do Catador</h3>
           <p class="texto-sm">Descubra como o trabalho sustentável dos catadores contribui para o crescimento econômico.</p>
 
-          <a href="" class="btn-primario btn-index-after --cor-primaria">Acessar perfil</a>
+          <a href="index.php?page=publico&perfil=Catadores" class="btn-primario btn-index-after --cor-primaria">Acessar perfil</a>
         </div>
       </li>
     </ul>
@@ -78,3 +84,5 @@
     </div>
   </div>
 </section>
+
+<?php require_once('components/component-footer.php') ?>

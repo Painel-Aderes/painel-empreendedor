@@ -1,0 +1,56 @@
+@import "../global/global-styles";
+@import "../components/component-header";
+@import "../components/component-breadcrumb";
+
+main {
+  padding: calc(7.5rem + var(--section_top-spacing)) 0 9rem;
+  background: var(--wireframe-100);
+
+  .container {
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+section {
+  margin-top: var(--sections-margin);
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 2.75rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+
+        a {
+          width: 100%;
+          height: 13.5rem;
+          background-color: var(--wireframe-100);
+          border-radius: var(--borda);
+          padding: 2rem 1.5rem;
+          display: flex;
+          align-items: flex-end;
+          color: var(--wireframe-500);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../global/global-styles";
+@import "../components/component-header";
+@import "../components/component-breadcrumb";
+
+main {
+  padding-top: calc(1.8rem + var(--section_top-spacing));
+
+  .nav-container {
+    padding-right: 0;
+    margin-bottom: 2.75rem;
+
+    #estatisticas-nav {
+      max-width: 100%;
+
+      ul {
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        padding-bottom: 1rem;
+
+        li {
+          &:not(:last-child) {
+            margin-right: 1.4rem;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            padding: .75rem 1.5rem;
+            background: var(--wireframe-200);
+            color: var(--wireframe-500);
+            border-radius: var(--borda-m);
+            white-space: nowrap;
+
+            // span {
+            //   display: inline;
+
+            // }
+
+            div {
+              margin-right: .5rem;
+              height: 16px;
+              width: 16px;
+
+              svg {
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

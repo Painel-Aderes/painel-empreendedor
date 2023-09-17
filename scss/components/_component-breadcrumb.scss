@@ -1,0 +1,34 @@
+#breadcrumb {
+  margin-bottom: 2rem;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      font-size: .875rem;
+      line-height: 1;
+      text-transform: capitalize;
+
+      a {
+        color: var(--wireframe-400);
+      }
+
+      &.breadcrumb--active, & a.breadcrumb--active  {
+        font-weight: var(--medium);
+        color: var(--wireframe-500);
+      }
+
+      &:not(:last-child) {
+        margin-right: .4rem;
+        display: flex;
+        align-items: center;
+
+        &::after {
+          margin-left: .4rem;
+          content: url(../assets/icon/breadcrumb__arrow.svg);
+        }
+      }
+    }
+  }
+}

@@ -25,9 +25,9 @@
       <nav id="header-nav">
         <ul id="internal-nav">
           <li><a href="index.php">Início</a></li>
-          <li><a href="index.php">Público</a></li>
-          <li><a href="index.php">Microcrédito</a></li>
-          <li><a href="index.php">Sobre o Painel</a></li>
+          <li><a href="">Público</a></li>
+          <li><a href="index.php?page=microcredito">Microcrédito</a></li>
+          <li><a href="index.php?page=sobre">Sobre o Painel</a></li>
         </ul>
 
         <!-- <ul id="user-nav">
