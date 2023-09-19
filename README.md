@@ -1,5 +1,6 @@
 # Protótipo do Painel do Empreendedor
-O protótipo do painel pode ser acessado a partir [deste link](https://painel-empreendedor-p-44075028dd80.herokuapp.com/), e é alimentado por [esta API de teste](https://www.npoint.io/docs/c9b78481158fd7622b0e). 
+<!-- O protótipo do painel pode ser acessado a partir [deste link](https://painel-empreendedor-p-44075028dd80.herokuapp.com/), e é alimentado por [esta API de teste](https://www.npoint.io/docs/c9b78481158fd7622b0e).  -->
+Este protótipo ainda não tem link público. É possível apenas acessá-lo localmente no momento.
 
 ## Como abrir localmente
 **É necessário ter o [XAMPP](https://www.apachefriends.org/pt_br/download.html) instalado.**
