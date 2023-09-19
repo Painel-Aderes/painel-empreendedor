@@ -32,7 +32,7 @@ require_once('components/component-header.php');
           <h3>Navegue pelas estatísticas do artesanato capixaba</h3>
         </a></li>
 
-      <li><a href="">
+      <li><a href="calendario.php?perfil=Artesãos">
           <h3>Confira o calendário de eventos completo</h3>
         </a></li>
 
@@ -47,4 +47,4 @@ require_once('components/component-header.php');
   </div>
 </section>
 
-<?php require_once('compon ents/component-footer.php') ?>
+<?php require_once('components/component-footer.php') ?>

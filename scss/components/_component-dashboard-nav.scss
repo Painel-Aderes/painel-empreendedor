@@ -1,0 +1,43 @@
+#estatisticas-nav__mobile {
+  max-width: 100%;
+
+  ul {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 1.4rem;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: .75rem 1.5rem;
+        background: var(--wireframe-200);
+        color: var(--wireframe-500);
+        border-radius: var(--borda-m);
+        white-space: nowrap;
+
+        // span {
+        //   display: inline;
+
+        // }
+
+        div {
+          margin-right: .5rem;
+          height: 16px;
+          width: 16px;
+
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
