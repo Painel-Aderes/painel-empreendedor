@@ -67,6 +67,19 @@ a {
   left: -999999px;
 }
 
+.page-main-section {
+  padding: calc(7.5rem + var(--section_top-spacing)) 0 9rem;
+  background: var(--wireframe-100);
+
+  .container {
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
 footer {
   margin-top: 4.5rem;
   background: var(--wireframe-100);

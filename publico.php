@@ -1,14 +1,17 @@
 <?php
 $stylesheet = 'publico';
-$page_title = 'Perfil do ' . $perfil . ' | Painel do Empreendedor';
+$page_title = 'Perfil do ' . $_GET['perfil'] . ' | Painel do Empreendedor';
 require_once('components/component-header.php');
 ?>
 
 <!-- TODO O CONTEÚDO TEXTUAL DESSA PÁGINA MUDARÁ DE ACORDO COM OS PERFIS -->
 
-<main class="main">
+<main class="page-main-section">
   <div class="container">
-    <?php require_once('components/component-breadcrumb.php'); ?>
+    <?php 
+    $page = 'publico';
+    require_once('components/component-breadcrumb.php'); 
+    ?>
 
     <h1>Perfil para <?php echo $perfil ?></h1>
 
@@ -25,7 +28,7 @@ require_once('components/component-header.php');
           <h3>Retire aqui sua licença oficial como artesão</h3>
         </a></li>
 
-      <li><a href="index.php?page=estatisticas&perfil=Artesãos">
+      <li><a href="estatisticas.php?perfil=Artesãos">
           <h3>Navegue pelas estatísticas do artesanato capixaba</h3>
         </a></li>
 
@@ -44,4 +47,4 @@ require_once('components/component-header.php');
   </div>
 </section>
 
-<?php require_once('components/component-footer.php') ?>
+<?php require_once('compon ents/component-footer.php') ?>

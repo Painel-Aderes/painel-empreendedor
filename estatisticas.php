@@ -1,6 +1,6 @@
 <?php
 $stylesheet = 'estatisticas';
-$page_title = 'Estatísticas - ' . $perfil . ' | Painel do Empreendedor';
+$page_title = 'Estatísticas - ' . $_GET['perfil'] . ' | Painel do Empreendedor';
 require_once('components/component-header.php');
 ?>
 
@@ -12,7 +12,10 @@ require_once('components/component-header.php');
   </div>
 
   <div class="container">
-  <?php require_once('components/component-breadcrumb.php'); ?>
+    <?php
+    $page = 'Estatísticas';
+    require_once('components/component-breadcrumb.php');
+    ?>
 
   </div>
 </main>

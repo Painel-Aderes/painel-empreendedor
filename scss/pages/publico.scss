@@ -2,19 +2,6 @@
 @import "../components/component-header";
 @import "../components/component-breadcrumb";
 
-main {
-  padding: calc(7.5rem + var(--section_top-spacing)) 0 9rem;
-  background: var(--wireframe-100);
-
-  .container {
-    flex-direction: column;
-
-    h1 {
-      margin-bottom: 1.25rem;
-    }
-  }
-}
-
 section {
   margin-top: var(--sections-margin);
 
