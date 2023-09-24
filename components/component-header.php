@@ -30,8 +30,8 @@
         <ul id="internal-nav">
           <li><a href="index.php">Início</a></li>
           <li><a href="">Público</a></li>
-          <li><a href="index.php?page=microcredito">Microcrédito</a></li>
-          <li><a href="index.php?page=sobre">Sobre o Painel</a></li>
+          <li><a href="">Microcrédito</a></li>
+          <li><a href="sobre.php">Sobre o Painel</a></li>
         </ul>
 
         <!-- <ul id="user-nav">

@@ -8,22 +8,26 @@
 
   .container {
     flex-direction: column;
+    align-items: center;
 
     .display {
       margin-bottom: 1rem;
       text-align: center;
       color: var(--wireframe-000);
+      max-width: 31rem;
     }
 
     p {
       color: var(--wireframe-000);
       text-align: center;
+      max-width: 24rem;
     }
 
     .main-ctas {
       margin-top: 2.75rem;
       display: flex;
       flex-direction: column;
+      width: 100%;
 
       a {
         width: 100%;
@@ -90,12 +94,14 @@
         background: var(--wireframe-000);
         border-radius: var(--borda);
         border: 1px solid var(--wireframe-200);
+        max-width: 28rem;
 
         &:not(:last-child) {
           margin-bottom: 2rem;
         }
 
         &-image {
+          width: 100%;
           margin-bottom: 1.75rem;
           border-radius: var(--borda);
         }
@@ -112,6 +118,25 @@
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 36rem) {
+  .main .container {
+    .main-ctas {
+      width: 70%;
+    }
+  }
+
+  .index-section .btn-primario {
+    width: fit-content;
+  }
+
+  .section-perfil .container {
+    align-items: center;
+    h2 {
+      max-width: 28rem;
     }
   }
 }

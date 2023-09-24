@@ -14,6 +14,10 @@
         color: var(--wireframe-400);
       }
 
+      a:hover {
+        text-decoration: underline;
+      }
+
       &.breadcrumb--active, & a.breadcrumb--active  {
         font-weight: var(--medium);
         color: var(--wireframe-500);
