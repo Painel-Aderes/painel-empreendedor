@@ -1,11 +1,11 @@
 <?php
 $stylesheet = 'calendario';
-$page_title = 'Calendário de Eventos para ' . $_GET['perfil'] . ' | Painel do Empreendedor';
+$page_title = 'Calendário de Eventos | Painel do Empreendedor';
 $page = 'Calendário';
 require_once('components/component-header.php');
 ?>
 
-<link rel="stylesheet" href="css/vendor/select2.min.css">
+<!-- <link rel="stylesheet" href="css/vendor/select2.min.css"> -->
 
 
 <main>
@@ -20,7 +20,7 @@ require_once('components/component-header.php');
     require_once('components/component-breadcrumb.php');
     ?>
 
-    <h1 class="dashboard-title">Veja estatísticas sobre o artesanato em <strong id="dashboard-title__estado">Linhares</strong></h1>
+    <h1 class="dashboard-title">Confira o calendário de eventos no estado</h1>
 
 
     <section id="section-filtro__mobile">

@@ -2,6 +2,7 @@
 @import "../components/component-header";
 @import "../components/component-breadcrumb";
 @import "../components/component-dashboard-nav";
+@import "../components/component-dashboard-filtro";
 
 main {
   padding-top: calc(1.8rem + var(--section_top-spacing));
@@ -9,5 +10,90 @@ main {
   .nav-container {
     padding-right: 0;
     margin-bottom: 2.75rem;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+.resultado-box-mapa {
+  padding: 1rem;
+  border-radius: var(--borda-m);
+  border: 1px solid var(--wireframe-100);
+}
+
+.resultado-label-box {
+  border-radius: var(--borda-m);
+  border: 1px solid var(--wireframe-100);
+
+  .resultado-label {
+    padding: 1rem 1.25rem;
+    background: rgba(224, 224, 224, .4);
+    font-size: 1rem;
+    color: var(--wireframe-400);
+  }
+
+  .resultado-box {
+    padding: 1rem 1.25rem;
+    line-height: 1.75;
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        strong {
+          padding-left: .25rem;
+          font-weight: var(--semibold);
+        }
+
+        &::before {
+          content: '•';
+          margin-right: .5rem;
+        }
+      }
+    }
+
+    &.text-block {
+      p {
+        font-size: .875rem;
+      }
+    }
+  }
+}
+
+#estatisticas {
+  margin-top: 3rem;
+
+  .container {
+    flex-direction: column;
+
+    .estatisticas-mapa-resultado {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.4rem;
+
+      .estatisticas-mapa {
+        margin-bottom: 2rem;
+
+        .fallback-mapa {
+          width: 100%;
+          height: 19rem;
+          background: var(--wireframe-200);
+        }
+      }
+    }
+
+    .estatisticas-dados {
+      li:not(:last-child) {
+          margin-bottom: 1.375rem;
+        
+      }
+    }
   }
 }
