@@ -22,10 +22,14 @@
         border-radius: var(--borda-m);
         white-space: nowrap;
 
-        // span {
-        //   display: inline;
+        &.nav--ativo {
+          background: var(--wireframe-400);
+          color: var(--wireframe-000);
 
-        // }
+          svg path {
+            fill: var(--wireframe-200);
+          }
+        }
 
         div {
           margin-right: .5rem;

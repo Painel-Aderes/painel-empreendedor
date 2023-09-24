@@ -10,7 +10,7 @@
       line-height: 1;
       text-transform: capitalize;
 
-      a {
+      &, a {
         color: var(--wireframe-400);
       }
 

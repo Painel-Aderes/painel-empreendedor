@@ -80,6 +80,37 @@ a {
   }
 }
 
+.filtro-select-div {
+  display: flex;
+  border-radius: var(--borda-m);
+  border: 1px solid var(--wireframe-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+
+  &:focus-within {
+    border-color: var(--wireframe-300);
+  }
+  
+    &::after {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="8" viewBox="0 0 11 8" fill="none"><path d="M5.48481 6.94073L0.929896 2.38579C0.710217 2.16611 0.710217 1.80996 0.929896 1.5903L1.46115 1.05904C1.68046 0.839737 2.03589 0.839315 2.25571 1.0581L5.88257 4.66797L9.50941 1.0581C9.72923 0.839315 10.0847 0.839737 10.304 1.05904L10.8352 1.5903C11.0549 1.80998 11.0549 2.16614 10.8352 2.38579L6.28033 6.94073C6.06065 7.16039 5.70449 7.16039 5.48481 6.94073Z" fill="%23828282"/></svg>');
+    }
+
+  .filtro-select {
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none;
+    padding: .75rem 0 .75rem 1rem;
+    width: calc(100% - .875rem);
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
 footer {
   margin-top: 4.5rem;
   background: var(--wireframe-100);
