@@ -28,6 +28,14 @@ require_once('components/component-header.php');
 
       <form action="" id="listas-filtro">
         <div class="listas-label-input">
+          <label for="">Pesquise por um evento:</label>
+
+          <div class="filtro-search-div">
+              <input type="text" class="filtro-input" placeholder="Digite o nome do evento">
+          </div>
+        </div>
+
+        <div class="listas-label-input">
           <label for="">Munícipio</label>
 
           <div class="filtro-select-div">
@@ -39,13 +47,13 @@ require_once('components/component-header.php');
         </div>
 
         <div class="listas-label-input">
-          <label for="">Tipo de dado</label>
+          <label for="">Tipo de evento</label>
 
           <div class="filtro-select-div">
-            <select class="filtro-select" name="tipo-dado">
-              <option value="mapas">Mapas</option>
-              <option value="graficos">Gráficos e indicadores</option>
-              <option value="series">Séries temporais</option>
+            <select class="filtro-select" name="tipo-evento">
+              <option value="Feira">Feira</option>
+              <option value="Congresso">Congresso</option>
+              <option value="Capacitação">Capacitação</option>
             </select>
           </div>
         </div>
@@ -55,12 +63,8 @@ require_once('components/component-header.php');
 
           <div class="filtro-select-div">
             <select class="filtro-select" name="periodo">
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
               <option value="2023">2023</option>
+              <option value="2024">2024</option>
             </select>
           </div>
         </div>
@@ -71,6 +75,40 @@ require_once('components/component-header.php');
   </div>
 </main>
 
+<section id="section-eventos">
+  <div class="container">
+    <span class="eventos-resultados">Foram encontrados <strong>3 eventos</strong>.</span>
+
+    <ul class="evento-lista">
+      <li class="evento-item">
+        <span class="evento-categoria">Feira</span>
+        <p class="evento-titulo">CASACOR SÃO PAULO (36ª EDIÇÃO)</p>
+        <span class="evento-data">30 de Maio a 06 de Agosto de 2023</span>
+        <span class="evento-local">Conjunto Nacional, Vila Velha</span>
+
+        <a href="" class="evento-detalhes">Ver detalhes</a>
+      </li>
+
+      <li class="evento-item">
+        <span class="evento-categoria">Congresso</span>
+        <p class="evento-titulo">FEIRA E CONGRESSO CIENTÍFICO INTERNACIONAL DA ESTÉTICA</p>
+        <span class="evento-data">30 de Maio a 06 de Agosto de 2023</span>
+        <span class="evento-local">Conjunto Nacional, Vila Velha</span>
+
+        <a href="" class="evento-detalhes">Ver detalhes</a>
+      </li>
+
+      <li class="evento-item">
+        <span class="evento-categoria">Capacitação</span>
+        <p class="evento-titulo">FEIRA MEGA ARTESANAL</p>
+        <span class="evento-data">30 de Maio a 06 de Agosto de 2023</span>
+        <span class="evento-local">Conjunto Nacional, Vila Velha</span>
+
+        <a href="" class="evento-detalhes">Ver detalhes</a>
+      </li>
+    </ul>
+  </div>  
+</section>
 
 
 <script src="scripts/vendor/select2.min.js"></script>
