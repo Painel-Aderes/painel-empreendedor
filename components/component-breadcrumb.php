@@ -10,7 +10,7 @@
     ?>
 
         <!-- <li>Público</li> -->
-        <li><a href="publico.php?perfil=<?php echo $perfil ?>" class="breadcrumb--active"><?php echo $perfil ?></a></li>
+        <li class="breadcrumb--active"><?php echo $perfil ?></li>
 
       <?php
       } else {
