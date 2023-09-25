@@ -18,8 +18,6 @@ article {
 
   .container {
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
 
     h2 {
       margin-bottom: 1.25rem;
@@ -28,5 +26,11 @@ article {
     p:not(:last-child) {
       margin-bottom: 1rem;
     }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  article p{
+    max-width: 42rem;
   }
 }

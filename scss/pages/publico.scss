@@ -14,9 +14,10 @@ section {
       text-align: center;
       font-size: 1.3rem;
       margin-bottom: 2.75rem;
+      max-width: 34rem;
     }
 
-    ul {
+    .perfil-links {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -40,6 +41,19 @@ section {
           color: var(--wireframe-500);
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  section .container .perfil-links {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      width: 21rem;
     }
   }
 }

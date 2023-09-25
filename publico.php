@@ -23,7 +23,7 @@ require_once('components/component-header.php');
   <div class="container">
     <h2>Descubra como o artesanato pode se transformar em oportunidades de negócio promissoras.</h2>
 
-    <ul>
+    <ul class="perfil-links">
       <li><a href="">
           <h3>Retire aqui sua licença oficial como artesão</h3>
         </a></li>

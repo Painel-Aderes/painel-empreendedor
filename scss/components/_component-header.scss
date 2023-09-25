@@ -84,6 +84,11 @@ header {
       visibility: hidden;
       transition: .3s right ease-in-out;
 
+      @media only screen and (min-width: 48rem) {
+        width: 17rem;
+        right: -17rem;
+      }
+
       #internal-nav {
         display: flex;
         flex-direction: column;
@@ -103,6 +108,7 @@ header {
         #publico-nav {
           border-radius: var(--borda);
           overflow: hidden;
+
           &-button {
             display: flex;
             align-items: center;

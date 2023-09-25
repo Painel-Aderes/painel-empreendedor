@@ -61,6 +61,10 @@
       margin-bottom: 1.125rem;
     }
 
+    p {
+      max-width: 40rem;
+    }
+
     .btn-primario {
       margin-top: 2rem;
       width: 100%;
@@ -135,8 +139,36 @@
 
   .section-perfil .container {
     align-items: center;
+
     h2 {
       max-width: 28rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .main {
+    padding-top: calc(6rem + var(--section_top-spacing));
+    padding-bottom: 5rem;
+
+    .container {
+      align-items: flex-start;
+
+      .display,
+      p {
+        text-align: left;
+        max-width: 39rem;
+      }
+
+      .main-ctas {
+        flex-direction: row;
+        align-items: center;
+
+        a:last-child {
+          margin-top: 0;
+          margin-left: 1.125rem;
+        }
+      }
     }
   }
 }

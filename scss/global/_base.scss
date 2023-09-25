@@ -20,6 +20,22 @@ a {
     max-width: 34rem;
     margin: 0 auto;
   }
+
+  @media only screen and (min-width: 48rem) {
+    max-width: 44rem;
+  }
+
+  //   @media only screen and (min-width: 64rem) {
+  //   max-width: 58.5rem;
+  // }
+
+  // @media only screen and (min-width: 80rem) {
+  //   max-width: 70rem;
+  // }
+
+  // @media only screen and (min-width: 96rem) {
+  //   max-width: 76rem;
+  // }
 }
 
 .btn-primario,
@@ -52,6 +68,7 @@ a {
   &.--cor-primaria {
     background: var(--wireframe-000);
     color: var(--wireframe-600);
+    border: 2px solid var(--wireframe-000);
   }
 
   &.--borda-primaria {
