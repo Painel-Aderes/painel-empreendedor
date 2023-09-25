@@ -29,7 +29,14 @@
       <nav id="header-nav">
         <ul id="internal-nav">
           <li><a href="index.php">Início</a></li>
-          <li><a href="">Público</a></li>
+          <li id="publico-nav">
+            <a href="" id="publico-nav-button">Público</a>
+            <ul id="publico-nav-lista">
+              <li><a href="publico.php?perfil=Empreendedores">Empreendedores</a></li>
+              <li><a href="publico.php?perfil=Artesãos">Artesãos</a></li>
+              <li><a href="publico.php?perfil=Catadores">Catadores</a></li>
+            </ul>
+          </li>
           <li><a href="">Microcrédito</a></li>
           <li><a href="sobre.php">Sobre o Painel</a></li>
         </ul>
