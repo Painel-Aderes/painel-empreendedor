@@ -5,6 +5,10 @@ $page = 'Estatísticas';
 require_once('components/component-header.php');
 ?>
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+
 <!-- <link rel="stylesheet" href="css/vendor/select2.min.css"> -->
 
 
@@ -74,7 +78,7 @@ require_once('components/component-header.php');
   <div class="container">
     <div class="estatisticas-mapa-resultado">
       <article class="estatisticas-mapa resultado-box-mapa">
-        <div class="fallback-mapa"></div>
+        <div class="fallback-mapa" id="map"></div>
       </article>
 
       <article class="estatisticas-resultado resultado-label-box">
@@ -148,6 +152,7 @@ require_once('components/component-header.php');
 
 <!-- <script src="scripts/vendor/select2.min.js"></script> -->
 <script src="scripts/script-filtro.js"></script>
+<script type="module" src="scripts/script-map.js"></script>
 
 <!-- <script>
   $(document).ready(function() {
