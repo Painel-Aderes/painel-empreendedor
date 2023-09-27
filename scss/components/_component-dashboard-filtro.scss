@@ -11,7 +11,6 @@
     border-color: var(--wireframe-300);
   }
   
-
   .filtro-select, .filtro-input {
     -moz-appearance:none; 
     -webkit-appearance:none; 
@@ -38,6 +37,10 @@
   margin-top: 2rem;
   border-radius: var(--borda-m);
   border: 1px solid var(--wireframe-100);
+
+  @media only screen and (min-width: 64rem)  {
+    width: 60%;
+  }
 
   #toggle-filtro {
     width: 100%;

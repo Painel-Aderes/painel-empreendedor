@@ -89,6 +89,12 @@ header {
         right: -17rem;
       }
 
+      @media only screen and (min-width: 64rem) {
+        width: 19rem;
+        right: -19rem;
+        padding-right: 1.5rem;
+      }
+
       #internal-nav {
         display: flex;
         flex-direction: column;

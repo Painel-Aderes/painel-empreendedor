@@ -18,7 +18,7 @@ require_once('components/component-header.php')
 
 <section class="index-section" id="microcredito">
   <div class="container">
-    <img class="index-section-image__desktop" src="https://picsum.photos/592/368?grayscale" alt="">
+    <img class="index-section-image" src="https://picsum.photos/592/368?grayscale" alt="">
 
     <div class="index-section-info">
       <h2>Microcrédito personalizado para você</h2>
@@ -73,7 +73,7 @@ require_once('components/component-header.php')
 
 <section class="index-section">
   <div class="container">
-    <img class="index-section-image" src="https://picsum.photos/592/368?grayscale" alt="">
+    <img class="index-section-image sobre" src="https://picsum.photos/592/368?grayscale" alt="">
 
     <div class="index-section-info">
       <h2>Conheça o Painel do Empreendedor</h2>

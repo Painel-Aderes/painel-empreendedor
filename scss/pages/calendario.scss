@@ -47,6 +47,8 @@ main {
           padding: 1.25rem 1rem;
           border-radius: var(--borda-m);
           border: 1px solid var(--wireframe-100);
+          height: fit-content;
+          max-width: 18.5rem;
 
           &:not(:last-child) {
             margin-bottom: 1.625rem;
@@ -125,6 +127,16 @@ main {
 
     .evento-item {
       width: 21rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .evento-item {
+    width: 18.5rem !important;
+
+    &:not(:last-child) {
+      margin-bottom: 0 !important;
     }
   }
 }

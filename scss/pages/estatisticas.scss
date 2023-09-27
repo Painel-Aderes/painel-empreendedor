@@ -42,7 +42,7 @@ main {
       li {
         display: flex;
         align-items: center;
-        
+
         &:not(:last-child) {
           margin-bottom: 1rem;
         }
@@ -91,8 +91,35 @@ main {
 
     .estatisticas-dados {
       li:not(:last-child) {
-          margin-bottom: 1.375rem;
-        
+        margin-bottom: 1.375rem;
+      }
+    }
+
+    @media only screen and (min-width: 64rem) {
+      .estatisticas-mapa-resultado {
+        flex-direction: row;
+        align-items: stretch;
+        margin-bottom: 1.8rem;
+
+        .estatisticas-mapa {
+          width: calc(100% - 17rem);
+          margin-right: 1.375rem;
+          margin-bottom: 0;
+        }
+
+        .estatisticas-resultado {
+          width: 17rem;
+        }
+      }
+
+      .estatisticas-dados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          width: 49%;
+        }
       }
     }
   }

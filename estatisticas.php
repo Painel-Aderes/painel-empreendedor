@@ -146,7 +146,7 @@ require_once('components/component-header.php');
 </section>
 
 
-<script src="scripts/vendor/select2.min.js"></script>
+<!-- <script src="scripts/vendor/select2.min.js"></script> -->
 <script src="scripts/script-filtro.js"></script>
 
 <!-- <script>
