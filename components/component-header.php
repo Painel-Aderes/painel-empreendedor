@@ -41,11 +41,11 @@
           <li><a href="sobre.php">Sobre o Painel</a></li>
         </ul>
 
-        <!-- <ul id="user-nav">
-          <li><button><span class="hide">Notificações</span></button></li>
-          <li><button><span class="hide">dúvidas frequentes</span></button></li>
-          <li></li>
-        </ul> -->
+        <ul id="user-nav">
+          <li><button id="user-notificacao"><span class="hide">Notificações</span></button></li>
+          <li><button id="user-faq"><span class="hide">dúvidas frequentes</span></button></li>
+          <li><button id="user-select">Fulano</button></li>
+        </ul>
       </nav>
     </div>
   </header>
