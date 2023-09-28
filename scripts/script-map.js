@@ -19,9 +19,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 9,
 }).addTo(map);
 
-// fetch('ES.json').then(r => r.json()).then( r => r.features.forEach(e => console.log(e)))
-
-
 //CRIA OS SVGS NO MAPA ==============================*===================== 
 let visibleColor = '#0c96d5',
   notVisibleColor = '#2b5f78';

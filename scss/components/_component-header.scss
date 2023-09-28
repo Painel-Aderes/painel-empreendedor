@@ -5,7 +5,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 99999;
 
   &::before {
     content: '';
@@ -21,7 +21,7 @@ header {
     transition: .3s opacity ease-in-out;
   }
 
-  .container {
+  .header-container {
     justify-content: space-between;
     align-items: center;
 
@@ -92,7 +92,6 @@ header {
       @media only screen and (min-width: 64rem) {
         width: 19rem;
         right: -19rem;
-        padding-right: 1.5rem;
       }
 
       #internal-nav {
@@ -171,7 +170,7 @@ header {
       transition: .3s opacity ease-in-out;
     }
 
-    .container {
+    .header-container {
       #menu div {
         background: transparent;
 

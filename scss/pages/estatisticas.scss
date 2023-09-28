@@ -3,18 +3,18 @@
 @import "../components/component-breadcrumb";
 @import "../components/component-dashboard-nav";
 @import "../components/component-dashboard-filtro";
+@import "../global/dashboard";
 
 main {
   padding-top: calc(1.8rem + var(--section_top-spacing));
 
-  .nav-container {
-    padding-right: 0;
-    margin-bottom: 2.75rem;
-  }
-
   .main-container {
     flex-direction: column;
   }
+
+  // @media only screen and (min-width: 80rem) {
+  //   padding-top: 0;
+  // }
 }
 
 .resultado-box-mapa {

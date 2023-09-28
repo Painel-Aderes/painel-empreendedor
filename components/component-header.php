@@ -16,7 +16,7 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="header-container">
       <div class="logo-container">
         <a href="index.php" id="header-logo">Painel do Empreendedor</a>
       </div>

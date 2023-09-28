@@ -3,18 +3,18 @@
 @import "../components/component-breadcrumb";
 @import "../components/component-dashboard-nav";
 @import "../components/component-dashboard-filtro";
+@import "../global/dashboard";
 
 main {
   padding-top: calc(1.8rem + var(--section_top-spacing));
 
-  .nav-container {
-    padding-right: 0;
-    margin-bottom: 2.75rem;
-  }
-
   .main-container {
     flex-direction: column;
   }
+
+  // @media only screen and (min-width: 80rem) {
+  //   padding-top: 0;
+  // }
 }
 
 #section-eventos {
@@ -138,5 +138,23 @@ main {
     &:not(:last-child) {
       margin-bottom: 0 !important;
     }
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  .evento-item {
+    min-width: 18.5rem !important;
+    width: 100% !important;
+    max-width: 21rem !important;
+
+    &:not(:last-child), &:last-child {
+      margin-bottom: 1.5rem !important;
+    }
+    // margin-bottom: 1.5rem;
+  }
+
+  footer {
+    background: none;
+    color: var(--wireframe-300);
   }
 }

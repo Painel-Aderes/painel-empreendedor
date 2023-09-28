@@ -11,6 +11,11 @@ a {
   display: block;
 }
 
+.header-container {
+  padding: 0 1.5rem;
+  display: flex;
+}
+
 .container {
   padding: 0 1.5rem;
   display: flex;
@@ -29,9 +34,9 @@ a {
     max-width: 58.5rem;
   }
 
-  // @media only screen and (min-width: 80rem) {
-  //   max-width: 70rem;
-  // }
+  @media only screen and (min-width: 80rem) {
+    max-width: 70rem;
+  }
 
   // @media only screen and (min-width: 96rem) {
   //   max-width: 76rem;
@@ -105,8 +110,10 @@ a {
 
 footer {
   margin-top: 4.5rem;
-  background: var(--wireframe-100);
+  background: var(--wireframe-200);
   padding: 1.25rem 0;
+  position: relative;
+  z-index: 9999;
 
   .container {
     justify-content: center;
