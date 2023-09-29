@@ -46,9 +46,9 @@ require_once('components/component-header.php');
               <label for="">Munícipio</label>
 
               <div class="filtro-select-div">
-                <select class="filtro-select" name="estado">
-                  <option value="AL">Alabama</option>
-                  <option value="WY">Wyoming</option>
+                <select class="filtro-select" name="estado" id="municipio">
+                  <!-- <option value="AL">Alabama</option> -->
+                  <!-- <option value="WY">Wyoming</option> -->
                 </select>
               </div>
             </div>
@@ -119,6 +119,18 @@ require_once('components/component-header.php');
   </section>
 
 </section>
+
+<script>
+  const inputMunicipios = document.getElementById('municipio');
+
+  fetch('codigosIBGE.json').then(r => r.json()).then(r => {
+    for (let i = 0; i < r.length; i++) {
+      let option = /*html*/ `<option value="${r[i].codigo}">${r[i].nome}</option>`;
+      inputMunicipios.insertAdjacentHTML('beforeend', option);
+    }
+  }) 
+</script>
+
 <script src="scripts/script-filtro.js"></script>
 
 

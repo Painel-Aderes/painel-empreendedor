@@ -56,6 +56,9 @@ main {
     }
 
     &.text-block {
+      canvas {
+        margin: 0 auto;
+      }
       p {
         font-size: .875rem;
       }
