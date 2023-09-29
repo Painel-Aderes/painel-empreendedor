@@ -18,7 +18,7 @@ require_once('components/component-header.php')
 
 <section class="index-section" id="microcredito">
   <div class="container">
-    <img class="index-section-image" src="https://picsum.photos/592/368?grayscale" alt="">
+    <img class="index-section-image" src="https://picsum.photos/id/180/592/368" alt="">
 
     <div class="index-section-info">
       <h2>Microcrédito personalizado para você</h2>
@@ -36,7 +36,7 @@ require_once('components/component-header.php')
 
     <ul class="perfil-lista">
       <li class="perfil-item">
-        <img class="perfil-item-image" src="https://picsum.photos/344/280?grayscale" alt="">
+        <img class="perfil-item-image" src="https://picsum.photos/id/4/344/280" alt="">
 
         <div class="perfil-item-info">
           <h3>Perfil do Empreendedor</h3>
@@ -47,7 +47,7 @@ require_once('components/component-header.php')
       </li>
 
       <li class="perfil-item">
-        <img class="perfil-item-image" src="https://picsum.photos/344/280?grayscale" alt="">
+        <img class="perfil-item-image" src="https://picsum.photos/id/4/344/280" alt="">
 
         <div class="perfil-item-info">
           <h3>Perfil do Artesão</h3>
@@ -58,7 +58,7 @@ require_once('components/component-header.php')
       </li>
 
       <li class="perfil-item">
-        <img class="perfil-item-image" src="https://picsum.photos/344/280?grayscale" alt="">
+        <img class="perfil-item-image" src="https://picsum.photos/id/4/344/280" alt="">
 
         <div class="perfil-item-info">
           <h3>Perfil do Catador</h3>
@@ -73,7 +73,7 @@ require_once('components/component-header.php')
 
 <section class="index-section">
   <div class="container">
-    <img class="index-section-image sobre" src="https://picsum.photos/592/368?grayscale" alt="">
+    <img class="index-section-image sobre" src="https://picsum.photos/id/180/592/368" alt="">
 
     <div class="index-section-info">
       <h2>Conheça o Painel do Empreendedor</h2>
