@@ -13,7 +13,7 @@ require_once('components/component-header.php');
 
     <h1>Sobre o Painel do Empreendedor</h1>
 
-    <p class="texto-lg">Saiba mais sobre a plataforma de microempreendedorismo e Desenvolvimento no Espírito Santo.</p>
+    <p class="texto-lg">Saiba mais sobre a plataforma de microempreendedorismo e desenvolvimento do Espírito Santo.</p>
   </div>
 </main>
 

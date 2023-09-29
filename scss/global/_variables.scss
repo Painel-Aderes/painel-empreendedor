@@ -32,4 +32,8 @@
 
   // // // SEPARA O TITULO DO CONTEUDO DAS SEÇÕES
   // --section-title_spacing: 2.75rem;
+
+  @media only screen and (min-width: 48rem) {
+  --sections-margin: 6.5rem;
+  }
 }

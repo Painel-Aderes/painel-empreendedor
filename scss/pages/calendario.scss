@@ -11,10 +11,6 @@ main {
   .main-container {
     flex-direction: column;
   }
-
-  // @media only screen and (min-width: 80rem) {
-  //   padding-top: 0;
-  // }
 }
 
 #section-eventos {
@@ -142,19 +138,19 @@ main {
 }
 
 @media only screen and (min-width: 80rem) {
+  footer {
+    background: none;
+    color: var(--wireframe-300);
+  }
+}
+
+@media only screen and (min-width: 83rem) {
   .evento-item {
-    min-width: 18.5rem !important;
     width: 100% !important;
     max-width: 21rem !important;
 
     &:not(:last-child), &:last-child {
       margin-bottom: 1.5rem !important;
     }
-    // margin-bottom: 1.5rem;
-  }
-
-  footer {
-    background: none;
-    color: var(--wireframe-300);
   }
 }

@@ -70,7 +70,7 @@
 
     #estatisticas-nav__desktop {
       position: sticky;
-      top: 6rem;
+      top: 6.5rem;
 
       ul {
         li {
@@ -82,6 +82,12 @@
             background: none;
             font-size: .875rem;
             color: var(--wireframe-500);
+            transition: .2s background linear;
+
+            &:hover {
+              background: rgba(189, 189, 189, 0.3);
+              transition: .2s background linear;
+            }
 
             svg path {
               fill: var(--wireframe-300);

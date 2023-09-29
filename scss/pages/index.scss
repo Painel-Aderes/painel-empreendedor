@@ -82,12 +82,11 @@
     .btn-primario {
       margin-top: 2rem;
       width: 100%;
+      min-width: 15rem;
       background: var(--wireframe-500);
       color: var(--wireframe-000);
     }
   }
-
-
 }
 
 .section-perfil {
@@ -141,6 +140,10 @@
   }
 }
 
+footer {
+  margin-top: 0;
+}
+
 @media only screen and (min-width: 36rem) {
   .main .container {
     .main-ctas {
@@ -163,8 +166,8 @@
 
 @media only screen and (min-width: 48rem) {
   .main {
-    padding-top: calc(6rem + var(--section_top-spacing));
-    padding-bottom: 5rem;
+    padding-top: calc(6.5rem + var(--section_top-spacing));
+    padding-bottom: 5.5rem;
 
     .container {
       align-items: flex-start;
@@ -179,9 +182,14 @@
         flex-direction: row;
         align-items: center;
 
-        a:last-child {
-          margin-top: 0;
-          margin-left: 1.125rem;
+        a {
+          max-width: 17rem;
+
+          &:last-child {
+            margin-top: 0;
+            margin-left: 1.125rem;
+
+          }
         }
       }
     }
@@ -215,6 +223,10 @@
 }
 
 @media only screen and (min-width: 80rem) {
+  .display {
+    max-width: 54rem !important;
+  }
+
   .perfil-item {
     width: 22.5rem !important;
   }
