@@ -68,6 +68,10 @@
 
   &-image {
     margin-bottom: 2.75rem;
+
+    @media only screen and (min-width: 80rem) {
+      margin-right: 2rem !important;
+    }
   }
 
   &-info {
@@ -229,5 +233,23 @@ footer {
 
   .perfil-item {
     width: 22.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 86rem) {
+  .display {
+    max-width: 57rem !important;
+  }
+
+  .perfil-item {
+    width: 24rem !important;
+
+    &:nth-child(2) {
+      .perfil-item-info {
+        p {
+          margin-bottom: 1.5rem !important;
+        }
+      }
+    }
   }
 }

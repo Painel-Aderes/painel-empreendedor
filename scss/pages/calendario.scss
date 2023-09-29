@@ -140,17 +140,32 @@ main {
 @media only screen and (min-width: 80rem) {
   footer {
     background: none;
-    color: var(--wireframe-300);
+
+    * {
+      color: var(--wireframe-300);
+    }
+
+    .container {
+      padding: 0 0 0 16rem;
+    }
   }
 }
 
-@media only screen and (min-width: 83rem) {
-  .evento-item {
-    width: 100% !important;
-    max-width: 21rem !important;
+@media only screen and (min-width: 86rem) {
+  .evento-lista {
+    justify-content: flex-start !important;
 
-    &:not(:last-child), &:last-child {
-      margin-bottom: 1.5rem !important;
+    .evento-item {
+      width: 100% !important;
+      max-width: 21rem !important;
+  
+      &:not(:last-child), &:last-child {
+        margin-bottom: 0 !important;
+      }
+  
+      &:not(:last-child) {
+        margin-right: 2rem !important;
+      }
     }
   }
 }

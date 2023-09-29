@@ -38,6 +38,10 @@ a {
     max-width: 70rem;
   }
 
+  @media only screen and (min-width: 86rem) {
+    max-width: 76rem;
+  }
+
   // @media only screen and (min-width: 96rem) {
   //   max-width: 76rem;
   // }

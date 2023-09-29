@@ -170,6 +170,7 @@ header {
 
         #user-notificacao {
           padding: .625rem;
+
           &::before {
             content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M8.76515 18C10.0069 18 11.0141 16.9928 11.0141 15.75H6.51621C6.51621 16.9928 7.52344 18 8.76515 18ZM16.3375 12.7368C15.6582 12.0069 14.3873 10.909 14.3873 7.3125C14.3873 4.58086 12.472 2.39414 9.88945 1.85766V1.125C9.88945 0.503789 9.38601 0 8.76515 0C8.1443 0 7.64086 0.503789 7.64086 1.125V1.85766C5.05828 2.39414 3.14297 4.58086 3.14297 7.3125C3.14297 10.909 1.87207 12.0069 1.19286 12.7368C0.981919 12.9635 0.888403 13.2346 0.890161 13.5C0.894028 14.0766 1.34649 14.625 2.01868 14.625H15.5116C16.1838 14.625 16.6366 14.0766 16.6401 13.5C16.6419 13.2346 16.5484 12.9632 16.3375 12.7368Z" fill="%23828282"/></svg>');
           }
@@ -283,9 +284,11 @@ header {
 
           &-button {
             width: fit-content;
+            background: none !important;
           }
 
-          &-lista {
+          &-lista,
+          &.--publico-nav--ativo #publico-nav-lista {
             position: absolute;
             left: -1rem;
             height: auto;
@@ -295,7 +298,7 @@ header {
             background: var(--wireframe-000);
             border: 1px solid var(--wireframe-200);
             border-radius: var(--borda);
-            padding: .75rem;
+            padding: .75rem !important;
             z-index: inherit;
 
             a:hover {
@@ -307,6 +310,10 @@ header {
             #publico-nav-lista {
               visibility: visible;
               opacity: 1;
+            }
+
+            #publico-nav-button::after {
+              transform: rotate(180deg);
             }
           }
         }

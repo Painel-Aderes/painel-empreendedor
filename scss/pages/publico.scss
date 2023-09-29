@@ -81,3 +81,14 @@ section {
     }
   }
 }
+
+@media only screen and (min-width: 86rem) {
+  section .container .perfil-links li {
+    width: 24rem;
+    margin-bottom: 2rem !important;
+
+    &:last-child {
+      margin-left: 2rem;
+    }
+  }
+}
