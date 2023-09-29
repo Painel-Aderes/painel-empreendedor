@@ -21,10 +21,11 @@ main {
 
     .eventos-resultados {
       display: block;
-      color: var(--wireframe-400);
+      color: var(--visual-800, --wireframe-400);
       margin-bottom: 2rem;
 
       strong {
+        color: var(--visual-500);
         font-weight: var(--semibold);
       }
     }
@@ -42,7 +43,7 @@ main {
         &-item {
           padding: 1.25rem 1rem;
           border-radius: var(--borda-m);
-          border: 1px solid var(--wireframe-100);
+          border: 1px solid #c8667388;
           height: fit-content;
           max-width: 18.5rem;
 
@@ -57,7 +58,8 @@ main {
           margin-bottom: .75rem;
           padding: .25rem 1rem;
           border-radius: var(--borda);
-          background: var(--wireframe-100);
+          background: #d04457;
+          color: var(--wireframe-000);
           font-size: 0.875rem;
           font-weight: var(--medium);
           letter-spacing: .02625rem;
@@ -99,13 +101,13 @@ main {
           font-size: .875rem;
           padding: .5rem 1.25rem;
           border-radius: var(--borda-m);
-          background: var(--wireframe-200);
-          color: var(--wireframe-600);
+          background: #C86673;
+          color: var(--wireframe-000);
           display: flex;
           align-items: center;
 
           &::after {
-            content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none"><path d="M0.669884 10.63L1.73054 11.6907L10.6542 2.767L10.6542 8.60064L12.1604 8.60063L12.1604 0.200207L3.75994 0.200206L3.75994 1.70634H9.59357L0.669884 10.63Z" fill="%23111111"/></svg>');
+            content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9" height="10" viewBox="0 0 9 10" fill="none"><path d="M0.0775848 8.56184L1.13824 9.6225L7.06299 2.88235L7.06299 8.71598L8.56913 8.71598L8.56913 0.315552L0.168702 0.315551L0.168701 1.82169H6.00233L0.0775848 8.56184Z" fill="%23fff"/></svg>');
             margin-left: .5rem;
           }
         }

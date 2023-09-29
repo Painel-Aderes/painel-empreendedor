@@ -2,14 +2,14 @@
 .filtro-search-div {
   display: flex;
   border-radius: var(--borda-m);
-  border: 1px solid var(--wireframe-100);
+  border: 1px solid rgb(190, 200, 237);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 1rem;
 
   &:focus-within {
-    border-color: var(--wireframe-300);
+    border-color: var(--visual-200, --wireframe-300);
   }
 
   .filtro-select,
@@ -38,7 +38,7 @@
 #section-filtro__mobile {
   margin-top: 2rem;
   border-radius: var(--borda-m);
-  border: 1px solid var(--wireframe-100);
+  border: 1px solid rgb(190, 200, 237);
 
   @media only screen and (min-width: 64rem) {
     width: 60%;
@@ -84,7 +84,8 @@
     #filtro-limpa {
       padding: .5rem .75rem;
       border-radius: var(--borda);
-      background: rgba(224, 224, 224, 0.50);
+      background: rgba(190, 200, 237, .5);
+      color: var(--visual-700);
       font-size: .875rem;
       letter-spacing: .00875rem;
     }

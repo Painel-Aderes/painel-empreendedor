@@ -4,7 +4,7 @@
 .main {
   padding-top: calc(4.5rem + var(--section_top-spacing));
   padding-bottom: 4rem;
-  background: var(--wireframe-400);
+  background: var(--visual-700, --wireframe-400);
 
   .container {
     flex-direction: column;
@@ -18,7 +18,7 @@
     }
 
     p {
-      color: var(--wireframe-000);
+      color: var(--visual-100, --wireframe-000);
       text-align: center;
       max-width: 24rem;
     }
@@ -31,6 +31,12 @@
 
       a {
         width: 100%;
+
+        &:first-child {
+          background: var(--wireframe-000);
+          border-color: var(--wireframe-000);
+          color: var(--visual-700);
+        }
 
         &:last-child {
           margin-top: 1.125rem;
@@ -46,6 +52,10 @@
 
   .container {
     flex-direction: column;
+
+    h2 {
+      color: var(--visual-800);
+    }
 
     @media only screen and (min-width: 64rem) {
       flex-direction: row;
@@ -87,7 +97,7 @@
       margin-top: 2rem;
       width: 100%;
       min-width: 15rem;
-      background: var(--wireframe-500);
+      background: var(--visual-600, --wireframe-500);
       color: var(--wireframe-000);
     }
   }
@@ -95,7 +105,7 @@
 
 .section-perfil {
   padding: var(--sections-margin) 0;
-  background: var(--wireframe-100);
+  background: #f3ebeb;
 
   .container {
     flex-direction: column;
@@ -103,6 +113,7 @@
     h2 {
       text-align: center;
       margin-bottom: 2.75rem;
+      color: var(--visual-900);
     }
 
     .perfil-lista {
@@ -115,7 +126,7 @@
         padding: 1.5rem 1.25rem;
         background: var(--wireframe-000);
         border-radius: var(--borda);
-        border: 1px solid var(--wireframe-200);
+        border: 1px solid #bdbcbc;
         max-width: 28rem;
 
         &:not(:last-child) {
@@ -129,13 +140,17 @@
         }
 
         &-info {
+          * {
+            color: var(--visual-900);
+          }
           p {
             margin: .75rem 0 1.5rem;
           }
 
           .btn-primario {
             width: 100%;
-            background: var(--wireframe-500);
+            background: #C86673;
+            border-color: #C86673;
             color: var(--wireframe-000);
           }
         }

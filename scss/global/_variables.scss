@@ -19,6 +19,23 @@
   --wireframe-500: #333333;
   --wireframe-600: #111111;
 
+  //VISUAL TEMPORARIO
+  --visual-000: #fff;
+  --visual-100: #C7D8FF;
+  --visual-200: #8BAEFF;
+  --visual-300: #5084FF;
+  --visual-400: #2868FF;
+  --visual-500: #3555a0;
+  --visual-600: #314f94;
+  --visual-700: #002988;
+  --visual-800: #00174C;
+  --visual-900: #001138;
+
+  --rosa-100: #f8e2f1;
+  --rosa-200: #f4aee1;
+  --rosa-300: #FF00BB;
+  --rosa-900: #430031;
+
   //BORDA ================================
   --borda: .125rem;
   --borda-m: .25rem;
@@ -26,7 +43,7 @@
   //ESPAÇAMENTO ================================
   // // PADDIND-TOP -> FIXED HEADER 
   --section_top-spacing: 4.5rem + 1px;
-  
+
   // // ESPAÇAMENTO ENTRE SEÇÕES
   --sections-margin: 5rem;
 
@@ -34,6 +51,10 @@
   // --section-title_spacing: 2.75rem;
 
   @media only screen and (min-width: 48rem) {
-  --sections-margin: 6.5rem;
+    --sections-margin: 6.5rem;
+  }
+
+  @media only screen and (min-width: 80rem) {
+    --sections-margin: 7.3rem;
   }
 }

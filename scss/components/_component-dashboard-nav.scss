@@ -3,17 +3,17 @@
     display: flex;
     align-items: center;
     padding: .75rem 1.5rem;
-    background: var(--wireframe-200);
+    background: #E6E6E6;
     color: var(--wireframe-500);
     border-radius: var(--borda-m);
     white-space: nowrap;
 
     &.nav--ativo {
-      background: var(--wireframe-400);
+      background: #264285;
       color: var(--wireframe-000);
 
       svg path {
-        fill: var(--wireframe-200);
+        fill: var(--visual-100);
       }
     }
 
@@ -61,7 +61,7 @@
     max-width: 16rem;
     position: fixed;
     height: 100vh;
-    background: var(--wireframe-100);
+    background: #1b4096;
     padding: 0 1.25rem;
 
     @media only screen and (min-width: 80rem) {
@@ -81,21 +81,21 @@
           a {
             background: none;
             font-size: .875rem;
-            color: var(--wireframe-500);
+            color: var(--wireframe-000);
             transition: .2s background linear;
 
             &:hover {
-              background: rgba(189, 189, 189, 0.3);
+              background: #143581;
               transition: .2s background linear;
             }
 
             svg path {
-              fill: var(--wireframe-300);
+              fill: var(--visual-100);
             }
 
             &.nav--ativo {
-              background: rgba(189, 189, 189, 0.60);
-              color: var(--wireframe-600);
+              background: #102a68ce;
+              color: var(--wireframe-000);
               font-weight: var(--medium);
             }
           }

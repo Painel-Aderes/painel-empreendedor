@@ -10,24 +10,28 @@ main {
 
   .main-container {
     flex-direction: column;
+
+    h2 {
+      color: var(--visual-800);
+    }
   }
 }
 
 .resultado-box-mapa {
   padding: 1rem;
   border-radius: var(--borda-m);
-  border: 1px solid var(--wireframe-100);
+  border: 1px solid var(--visual-100,--wireframe-100);
 }
 
 .resultado-label-box {
   border-radius: var(--borda-m);
-  border: 1px solid var(--wireframe-100);
+  border: 1px solid var(--visual-100,--wireframe-100);
 
   .resultado-label {
     padding: 1rem 1.25rem;
-    background: rgba(224, 224, 224, .4);
+    background: rgba(217, 223, 245, 0.4);
     font-size: 1rem;
-    color: var(--wireframe-400);
+    color: var(--visual-700,--wireframe-400);
   }
 
   .resultado-box {
